@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KIC CLAN</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #050505;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Background */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: -1;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            text-align: center;
+        }
+
+        /* KIC Logo */
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            border: 3px solid white;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 70px;
+            font-weight: 900;
+            letter-spacing: -5px;
+            box-shadow: 0 0 30px rgba(255,255,255,0.15);
+        }
+
+        h1 {
+            margin-top: 25px;
+            font-size: 55px;
+            font-weight: 900;
+            letter-spacing: 5px;
+        }
+
+        .clan {
+            margin-top: 8px;
+            font-size: 20px;
+            color: #aaa;
+            letter-spacing: 4px;
+        }
+
+        .description {
+            margin: 25px auto;
+            max-width: 600px;
+            color: #aaa;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        /* Buttons */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .button {
+            text-decoration: none;
+            color: white;
+            border: 1px solid #444;
+            background: #111;
+            padding: 15px 28px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: white;
+            color: black;
+            transform: translateY(-3px);
+        }
+
+        .members {
+            margin-top: 50px;
+            padding: 25px;
+            border: 1px solid #222;
+            background: rgba(15,15,15,0.8);
+            border-radius: 15px;
+        }
+
+        .members h2 {
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .member {
+            display: inline-block;
+            margin: 8px;
+            padding: 10px 18px;
+            border-radius: 8px;
+            background: #191919;
+            color: #ddd;
+        }
+
+        footer {
+            margin-top: 35px;
+            color: #555;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 38px;
+            }
+
+            .logo {
+                width: 120px;
+                height: 120px;
+                font-size: 55px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- KIC LOGO -->
+        <div class="logo">
+            KIC
+        </div>
+
+        <!-- TITLE -->
+        <h1>KIC CLAN</h1>
+
+        <div class="clan">
+            KNIFE CLAN
+        </div>
+
+        <p class="description">
+            Welcome to KIC Clan ⚔️<br>
+            A gaming community built for players who love
+            skill, competition and knives.
+        </p>
+
+        <!-- BUTTONS -->
+        <div class="buttons">
+
+            <a class="button"
+               href="https://www.roblox.com/users/9161292719/profile"
+               target="_blank">
+                ROBLOX
+            </a>
+
+            <a class="button"
+               href="https://discord.gg/pPmj956F4"
+               target="_blank">
+                DISCORD
+            </a>
+
+            <a class="button"
+               href="https://www.youtube.com/@Reallyknife67"
+               target="_blank">
+                YOUTUBE
+            </a>
+
+        </div>
+
+        <!-- MEMBERS -->
+        <div class="members">
+
+            <h2>KIC MEMBERS</h2>
+
+            <span class="member">mustafa18077</span>
+            <span class="member">KIC</span>
+            <span class="member">KNIFE</span>
+
+        </div>
+
+        <footer>
+            © 2026 KIC CLAN — STAY SHARP ⚔
+        </footer>
+
+    </div>
+
+</body>
+</html>
